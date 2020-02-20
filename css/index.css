@@ -1,1 +1,336 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  padding: 1% 5%;
+}
+html {
+  font-size: 62.5%;
+}
+* {
+  max-width: 100%;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Open Sans Condensed Light'), local('OpenSansCondensed-Light'), url(https://fonts.gstatic.com/s/opensanscondensed/v14/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhDuXMQg.ttf) format('truetype');
+}
+.contentflex {
+  margin: 10% 2.5%;
+  width: 45%;
+}
+.backgroundscheme1 {
+  background-color: #87ECD1;
+  border-radius: 15px 50px;
+}
+.backgroundscheme2 {
+  background-color: #9D78EC;
+  border-radius: 50px 15px;
+}
+/* Resume CSS Starts Here*/
+header nav {
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 3rem;
+  font-family: 'Lato', sans-serif;
+  padding-bottom: 2%;
+}
+@media (max-width: 500px) {
+  header nav {
+    font-size: 1.5rem;
+  }
+}
+header nav a {
+  text-decoration: none;
+  color: #5F9EA0;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .top {
+    flex-direction: column;
+    width: 90%;
+    max-width: 60%;
+  }
+}
+.headshot {
+  padding: 5%;
+  margin-top: 5%;
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  background-color: #1F3D77;
+  border-radius: 25px;
+}
+@media (max-width: 500px) {
+  .headshot {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.headshot h1 {
+  border-top: 2px solid black;
+  margin-top: 6%;
+  padding-top: 3%;
+  font-size: 3rem;
+}
+.headshot p {
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.headshot img {
+  display: flex;
+  align-content: center;
+  height: 50vh;
+  border-radius: 25px;
+}
+@media (max-width: 500px) {
+  .headshot img {
+    margin-left: 18%;
+  }
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 40%;
+  margin-top: 5%;
+  text-align: center;
+  border: yellow dotted 5px;
+}
+@media (max-width: 500px) {
+  .intro {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+.intro div h1 {
+  font-size: 4rem;
+  font-family: 'Lato', sans-serif;
+  padding-bottom: 5%;
+}
+.intro div h3 {
+  font-size: 3rem;
+  font-family: 'Lato', sans-serif;
+  border-top: 1px solid black;
+  padding-top: 15%;
+  padding-bottom: 5%;
+}
+.intro div p {
+  font-size: 2rem;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.content {
+  display: flex;
+  font-size: 2rem;
+  padding: 5%;
+}
+@media (max-width: 500px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.content div {
+  margin: 10% 2.5%;
+  width: 45%;
+}
+@media (max-width: 500px) {
+  .content div {
+    display: flex;
+    width: 90%;
+  }
+}
+.content h3 {
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  padding-bottom: 5%;
+}
+@media (max-width: 500px) {
+  .content h3 {
+    font-size: 2.2rem;
+  }
+}
+.content ul {
+  padding-left: 10%;
+}
+.content ul li {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2rem;
+  line-height: 200%;
+  list-style-type: circle;
+}
+.content .skills {
+  background-color: #87ECD1;
+  border-radius: 15px 50px;
+}
+.content .work {
+  background-color: #9D78EC;
+  border-radius: 50px 15px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  text-align: center;
+  background-color: #FFE577;
+}
+.contact h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1%;
+}
+.contact p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1%;
+  line-height: 150%;
+}
